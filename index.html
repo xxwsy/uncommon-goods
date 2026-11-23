@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UNCOMMON•GOODS 累计铸造总量 · 每日记录</title>
+<style>
+:root{--ink:#111827;--muted:#6B7280;--line:#E5E7EB;--label:#F7F9FC;
+      --latest:#EAF3FF;--up:#C0392B}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 20px;background:#FAFBFC;color:var(--ink);
+     font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:720px;margin:0 auto}
+h1{font-size:20px;font-weight:600;margin:0 0 6px}
+.sub{color:var(--muted);font-size:12.5px;margin-bottom:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;
+      box-shadow:0 1px 2px rgba(16,24,40,.03)}
+table{width:100%;border-collapse:collapse}
+thead th{background:#EEF2F7;color:#374151;font-weight:600;font-size:12.5px;
+         text-align:right;padding:11px 18px;border-bottom:1px solid var(--line)}
+thead th:first-child{text-align:left}
+tbody th{font-weight:500;font-size:13px;color:#374151;text-align:left;
+         background:var(--label);padding:11px 18px;border-bottom:1px solid var(--line)}
+tbody td{padding:11px 18px;text-align:right;border-bottom:1px solid var(--line);
+         font-variant-numeric:tabular-nums;font-size:13.5px}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+tbody tr.latest th,tbody tr.latest td{background:var(--latest)}
+tbody tr:hover th,tbody tr:hover td{background:#F3F7FC}
+.up{color:var(--up)}.none{color:#9CA3AF}
+.foot{margin-top:16px;color:var(--muted);font-size:12px;line-height:1.9}
+.foot b{color:#374151;font-weight:600}
+.latest-tag{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:6px;
+            background:#DCEBFA;color:#1D4ED8;font-size:11px;font-weight:500}
+</style></head><body><div class="wrap">
+<h1>UNCOMMON•GOODS 累计铸造总量</h1>
+<div class="sub">每日 06:00 取自 ord 索引器 · 最近更新 2026-11-23 06:01:18 · 2 个实例交叉核验一致</div>
+<div class="card"><table>
+<thead><tr><th>日期</th><th>总量</th><th>比上一日增加数量</th></tr></thead>
+<tbody><tr class="latest"><th scope="row">2026-11-23</th><td class="num">177,747,515</td><td class="num"><span class="up">+539,538</span></td></tr>
+<tr><th scope="row">2026-11-22</th><td class="num">177,207,977</td><td class="num"><span class="up">+318,525</span></td></tr>
+<tr><th scope="row">2026-11-21</th><td class="num">176,889,452</td><td class="num"><span class="up">+293,421</span></td></tr>
+<tr><th scope="row">2026-11-20</th><td class="num">176,596,031</td><td class="num"><span class="up">+336,340</span></td></tr>
+<tr><th scope="row">2026-11-19</th><td class="num">176,259,691</td><td class="num"><span class="up">+428,207</span></td></tr>
+<tr><th scope="row">2026-11-18</th><td class="num">175,831,484</td><td class="num"><span class="up">+313,264</span></td></tr>
+<tr><th scope="row">2026-11-17</th><td class="num">175,518,220</td><td class="num"><span class="up">+265,873</span></td></tr>
+<tr><th scope="row">2026-11-16</th><td class="num">175,252,347</td><td class="num"><span class="up">+1,030,977</span></td></tr>
+<tr><th scope="row">2026-11-15</th><td class="num">174,221,370</td><td class="num"><span class="up">+176,253</span></td></tr>
+<tr><th scope="row">2026-11-14</th><td class="num">174,045,117</td><td class="num"><span class="up">+161,905</span></td></tr>
+<tr><th scope="row">2026-11-13</th><td class="num">173,883,212</td><td class="num"><span class="up">+223,577</span></td></tr>
+<tr><th scope="row">2026-11-12</th><td class="num">173,659,635</td><td class="num"><span class="up">+286,431</span></td></tr>
+<tr><th scope="row">2026-11-11</th><td class="num">173,373,204</td><td class="num"><span class="up">+260,589</span></td></tr>
+<tr><th scope="row">2026-11-10</th><td class="num">173,112,615</td><td class="num"><span class="none">—</span></td></tr></tbody></table></div>
+<div class="foot">
+<b>口径</b>：ord <code>entry.mints</code> 累计铸造笔数；该符文每笔铸造 1 个，故等于累计铸造总量（含已销毁部分，未扣除）。<br>
+<b>表格</b>：日期为行标签，数据列仅有「总量」「比上一日增加数量」两列；按日期倒序，最新一天在最上方。<br>
+<b>增量</b>：当日总量 − 前一自然日总量；若前一日缺记录则显示 —，不拿更早记录顶替。<br>
+<b>补采</b>：若副标题取数时间不是 06:00，说明该行是补录，其增量覆盖时段会相应变化。
+</div></div></body></html>
